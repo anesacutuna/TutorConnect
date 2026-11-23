@@ -1,0 +1,24 @@
+{
+  "name": "tutorconnect/web-programming-project",
+  "description": "TutorConnect FlightPHP REST API",
+  "type": "project",
+  "require": {
+    "php": ">=8.2",
+    "ext-pdo": "*",
+    "ext-pdo_mysql": "*",
+    "ext-curl": "*",
+    "ext-mbstring": "*",
+    "flightphp/core": "^3.0",
+    "zircote/swagger-php": "^6.12"
+  },
+  "autoload": {
+    "classmap": [
+      "config/",
+      "rest/dao/",
+      "rest/services/",
+      "utils/",
+      "public/v1/docs/"
+    ],
+    "files": ["utils/exceptions.php"]
+  }
+}
